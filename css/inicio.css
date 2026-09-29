@@ -1,0 +1,367 @@
+/* ELEMENTOS COMUNES (no es solo de un section) */
+
+
+/* Clase COMÚN para aplicar a los section */
+.division {
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--colorBlanco);
+    gap: 1rem;
+    display: flex;
+    border-radius: 5px;
+    padding: 2rem 5%;
+}
+
+/* Propiedades COMUNES de los botones con la clase botón */
+.boton {
+    background-color: var(--colorAcento);
+    padding: 1rem;
+    color: var(--colorBlanco);
+    border-style: none;
+    width: 220px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Color azul para los elementos en el HTML con el span resaltado. COMÚN */
+.resaltado {
+    color: var(--colorAcento);
+}
+
+
+
+/* PRIMER SECTION */
+
+/* Magen para que la página respire */
+.baner {
+    margin: 100px 0px;
+}
+
+/* Propiedades para el texto principal del baner */
+.texto-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Propiedades para las imágenes del baner carrusel */
+.peliculas-banner img {
+    height: 250px;
+    width: 165px;
+
+}
+
+/* Propiedades del DIV que contiene las flechas y las imágenes de las películas */
+.peliculas-banner {
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+
+}
+
+/* Propiedades del DIV que contiene las imágenes de las películas */
+.grid {
+    display: flex;
+    gap: 1rem;
+
+}
+
+
+/* Propiedades del H1 del DIV que contiene el texto principal del baner */
+.texto-contenedor .h1baner {
+    color: var(--colorNegro);
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(3rem, 1vw, 4rem);
+
+}
+
+/* Propiedades del H2 del DIV que contiene el texto principal del baner */
+
+.texto-contenedor .h2baner {
+    color: var(--colorTextoSec);
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+
+/* Propiedades concretras del botón con clase proponer */
+.proponer {
+    background-color: var(--colorBlanco);
+    color: var(--colorNegro);
+    border: solid var(--colorNegro) 1px;
+}
+
+/* Hover para el botón proponer */
+.proponer:hover {
+    background-color: var(--colorGrisOscuro);
+    color: var(--colorBlanco);
+}
+
+/* Hover para el botón ver. No tiene propiedades concretas porque usa las generales */
+.ver:hover {
+    background-color: var(--colorAcentoOscuro);
+}
+
+/* Div con los dos botones, para separarlos entre ellos usamos el display flex y el gap */
+.div-boton {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Imagen de los iconos flechas del carrusel, les doy un tamaño */
+.icono-flecha img {
+    width: 25px;
+}
+
+
+
+
+/* SEGUNDO SECTION */
+
+
+/* Apartado de listas del mes con un fondo de color gris, disposición un al lado del otro con el display flex y el contenido centrado y espaciado con un gap */
+.listaMes {
+    background-color: var(--colorGris);
+    display: flex;
+    justify-content: center;
+    gap: 350px;
+}
+
+/* 'titulo' de la seccion y sus propiedades 'Listas del mes' */
+.h2listas {
+    width: 200px;
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: var(--colorAcento);
+}
+
+/* 'subtitulo' de la seccion y sus propiedades */
+.h3listas {
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(2.5rem, 1vw, 4rem);
+    color: var(--colorNegro);
+}
+
+/* Color del párrafo de debajo del h3 */
+.texto-contenedor p {
+    color: var(--colorTextoSec);
+}
+
+/* Div con el ranking en columna */
+.div-peliculas {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Es cada pelicula independiente con su informacion */
+.peliculas-orden{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+/* Informacion independiente de cada pelicula */
+.informacionP {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+
+/* Número de cada película independiente y sus propiedades */
+.numero {
+    color: var(--colorAcento);
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(1.5rem, 1vw, 3rem);
+    font-weight: 700;
+}
+
+/* Director de cada película y sus propiedades */
+.director {
+    color: var(--colorTextoSec);
+    font-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+/* Propiedades del nombre independiente de cada película */
+.nombre-pelicula {
+    font-weight: 700;
+}
+
+
+
+/* TERCER SECTION */
+
+/* Div de datos curiosos y sus propiedades */
+.datosCuriosos {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: space-around;
+    gap: 200px;
+
+}
+
+/* 'titulo' del seccion y sus propiedades */
+.h2datos {
+    width: 300px;
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: var(--colorAcento);
+}
+
+/* 'subitutlo' del section y sus propiedades*/
+.h3datos {
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(2rem, 1vw, 4rem);
+    color: var(--colorNegro);
+}
+
+
+/* Borde que redondea la información de las películas  */
+.borde {
+    border: solid var(--colorAcento) 0.25px;
+    padding: 0.75rem;
+    align-items: center;
+}
+
+/* Borde izquierdo puesto en el h3  */
+.bordeIzq {
+    border-left: solid var(--colorAcento) 3px;
+    padding-left: 2rem;
+}
+
+/* Div individual de cada pelicula en el tercer section */
+.peliculas-ordenes {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    cursor: default
+}
+
+
+
+/* Responsividad para MOVIL*/
+/* MOVIL. Para el carrusel, hay que clickar una vez en alguna de las flechas para que se pongan dos películas al cambiarlo a movil para que se adapte bien */
+/* Pongo max-width 425px para que tambien tenga en cuenta los móviles L y no solo los M */
+
+@media(max-width: 425px) {
+
+    /* Elementos comunes */
+    .division {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .texto-contenedor {
+        width: 350px;
+    }
+
+    /* PRIMER SECTION */
+    .baner {
+        margin: 0px;
+    }
+
+    .peliculas-banner {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .grid img {
+        width: 110px;
+        height: 150px;
+    }
+
+    /* SEGUNDO SECTION */
+    .listaMes {
+        gap: 50px;
+        align-items: flex-start;
+
+    }
+
+
+    /* TERCER SECTION */
+    .datosCuriosos {
+        margin: 0px;
+        gap: 50px;
+    }
+
+
+
+
+}
+
+/* Responsividad para TABLET*/
+/* Volver a clickar en las flechas del carrusel para que se ponga bien */
+
+@media (min-width:426px) and (max-width:800px) {
+
+    /* Elemento COMÚN */
+    .division {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* PRIMER SECTION */
+    .peliculas-banner {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .grid img {
+        width: 110px;
+        height: 150px;
+    }
+
+    .baner .texto-contenedor {
+        width: 400px;
+    }
+
+    /* Valor COMUN para los contenedores de texto */
+    .texto-contenedor {
+        width: 600px;
+    }
+
+    .baner {
+        margin: 0px;
+    }
+
+    
+    /* SEGUNDO SECTION */
+    .listaMes {
+        gap: 50px;
+
+    }
+
+    .listaMes {
+        align-items: flex-start;
+    }
+
+
+    /* TERCER SECTION */
+    .datosCuriosos {
+        margin: 0px;
+        gap: 50px;
+    }
+    
+    .datosCuriosos {
+        align-items: flex-start;
+    }
+
+    .div-peliculas {
+        width: 100%;
+    }
+
+
+
+}

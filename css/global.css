@@ -1,0 +1,182 @@
+/* Para poner los colores primarios/secundarias y las fuentes primarias/secundarias */
+:root {
+    --colorAcento: #4a7fa5;
+    --colorAcentoOscuro: #355c79;
+    --colorBlanco: #f5f5f3;
+    --colorNegro: #1a1a18;
+    --colorTextoSec: #6b6b68;
+    --colorGris: #e0e0dc;
+    --colorGrisOscuro: #444647;
+    --fuentePrimaria: "Lato", sans-serif;
+    --fuenteTitulo: "Playfair Display", serif;
+
+
+}
+
+/* Para quitar el margen y el padding de toda la página para ajustarlo a lo que necesitemos donde lo necesitemos */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo principal del body y fuente principal del body */
+body {
+    font-family: var(--fuentePrimaria);
+    background-color: var(--colorBlanco);
+
+}
+
+/* Clase para aplicar display flex */
+
+.flex {
+    display: flex;
+    gap: 2rem;
+}
+
+/* HEADER de las tres páginas para que tengan las mismas propiedades */
+
+header {
+    /* Para dejar espacio central entre los hijos*/
+    justify-content: space-between;
+    padding: 0.75rem 5%;
+    background-color: var(--colorAcento);
+    /* Para alinear los elementos al centro*/
+    align-items: center;
+    color: var(--colorBlanco);
+    /* Para que el header nos siga aun bajando*/
+    position: sticky;
+    z-index: 15;
+    top: 0;
+
+}
+
+/* Le quitamos los puntos a las listas */
+
+li {
+    list-style: none;
+
+
+}
+
+/* Quitamos el delineado de los enlaces y les ponemos color blanco */
+
+a {
+    color: var(--colorBlanco);
+    text-decoration: none;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+
+}
+
+/* Le damos un tamaño al logo */
+
+.logo img {
+    width: 70px;
+
+}
+
+
+/* Fuente para el titulo */
+.titulo {
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(1.25rem, 1vw, 2rem);
+}
+
+.titulo-pagina{
+    display: flex;
+    align-items: center;
+    
+}
+
+.subtitulo{
+    font-family: var(--fuentePrimaria);
+}
+
+.logo{
+    display: flex;
+    gap: 2rem;
+}
+
+/* FOOTER para las tres páginas */
+
+footer {
+    background-color: var(--colorAcento);
+    padding: 30px;
+    color: var(--colorBlanco);
+    /* Display flex con flex-direction column para que se ponga el texto en columna */
+    display: flex;
+    flex-direction: column;
+    /* Alineamos los elementos al centro */
+    align-items: center;
+    /* Ajustamos el tamaño */
+    font-size: clamp(0.50rem, 1vw, 0.75rem);
+    /* Para colocar el texto en el centro */
+    justify-content: center;
+}
+
+/* MENÚ */
+
+/* Hacemos que el menú desaparezca cuando está en tamaño ordenador */
+
+.menu {
+    display: none;
+}
+
+
+
+
+/* RESPONSIVIDAD para movil HEADER y FOOTER*/
+/* Pongo max-width 425px para que tambien tenga en cuenta los móviles L y no solo los M */
+
+@media(max-width: 425px) {
+
+
+    /* Hacemos que el menú (icono) aparezca cuando esté en el tamaño del movil */
+    .menu {
+        display: contents;
+    }
+
+
+    /* Le ponemos las propiedades al navegador que queremos para cuando salga */
+    .navegador {
+        flex-direction: column;
+        background-color: #f5f5f5;
+        padding: 15px;
+        position: fixed;
+        top: 5rem;
+        right: -3rem;
+        transition: all 0.5s;
+        opacity: 0;
+        z-index: 1;
+
+    }
+
+    /* Ponemos que el ul del navegador se ponga en columna cuando salga */
+
+    .navegador ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    /* Hacemos que el texto sea negro para que se lea */
+
+    .navegador a {
+        color: var(--colorNegro);
+    }
+
+
+}
+
+/* Creamos una clase, que hará que se muestre el contenido */
+.mostrar {
+    right: 0rem;
+    opacity: 1;
+}
+
+
+/* Para que los párrafos tengan un espacio entre sus lineas y no queden tan pegados entre si */
+p {
+    line-height: 1.5rem;
+}

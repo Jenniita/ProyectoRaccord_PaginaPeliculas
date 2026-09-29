@@ -1,0 +1,375 @@
+
+/* PRIMER SECTION */
+.section-contacto {
+    background-color: var(--colorNegro);
+    padding: 4rem 5%;
+}
+
+/* ELEMENTOS COMUNES */
+/* Div con el texto en columna */
+.texto-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--colorNegro);
+    width: 550px;
+
+}
+
+/* 'titulo' de la seccion y sus propiedades */
+.h2listas {
+    width: 200px;
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: var(--colorAcento);
+}
+
+/* 'subtitulo' de la seccioón y sus propiedades */
+.h1listas {
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(3rem, 1vw, 4rem);
+    color: var(--colorBlanco);
+}
+
+/* Propiedades del párrafo del div texto-contenedor. Propiedad COMÚN */
+.texto-contenedor p {
+    color: var(--colorNegro);
+
+}
+
+/* Color resaltado para alguna palabra que contenga el span en el HTML */
+.resaltado {
+    color: var(--colorAcento);
+}
+
+
+/* PRIMER SECTION */
+
+/* Propiedad del párrafo del section de contacto */
+.section-contacto p {
+    color: var(--colorGris);
+
+}
+
+/* Propiedades concretas del h2 de contacto */
+.section-contacto .h2listas {
+    width: 200px;
+    color: var(--colorBlanco);
+}
+
+/* Propiedades concretas del h3 de contacto */
+.section-contacto .h3listas {
+    color: var(--colorBlanco);
+}
+
+
+
+
+/* SEGUNDO SECTION */
+.section-formulario {
+    display: flex;
+    padding: 2rem 5%;
+    gap: 4rem;
+    margin: 100px 0;
+
+}
+
+.h3listas{
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(2.5rem, 1vw, 4rem);
+    color: var(--colorNegro);
+}
+
+/* Formulario del section 'formulario' */
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Párrafo del formulario con sus propiedades */
+.formulario p {
+    color: var(--colorTextoSec);
+}
+
+
+/* Div de 'por qué escribir'y sus propiedades */
+.porque-escribir {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+/* Div de los motivos y sus propiedades */
+.div-motivos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Div de los motivos independientes y sus propiedades */
+.motivos-tarjeta {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    border-left: solid var(--colorAcento) 3px;
+    padding: 1rem;
+
+}
+
+/* h3 de cada motivo */
+.motivos-tarjeta h3 {
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(1.25rem, 1vw, 2rem);
+
+}
+
+/* párrafo de cada motivo */
+.motivos-tarjeta p {
+    color: var(--colorTextoSec);
+}
+
+
+/* TERCER SECTION */
+/* Propiedades del section */
+.section-proponer {
+    display: flex;
+    padding: 2rem 5%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 100px 0;
+}
+
+/* Tamaño del div con el formulario */
+.proponer-lista {
+    width: 50%;
+}
+
+/* En el formulario, apartado de los ordenes de las peliculas */
+.peliculas-orden {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Input del div de los ordenes de las películas del formulario */
+.peliculas-orden input {
+    height: 40px;
+    padding: 0.75rem;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: var(--fuentePrimaria);
+
+}
+
+/* Numeros de las películas dentro del formulario  para proponerlas */
+.numero-pelicula {
+    color: var(--colorAcento);
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 2rem);
+    font-weight: 700;
+
+}
+
+
+/* CUARTO SECTION */
+/* Propiedades del section */
+.section-sobrenosotros {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5%;
+    gap: 100px;
+    width: 100%;
+}
+
+/* Div que contiene todas las tarjetas y sus propiedades */
+.info-nosotros {
+    display: flex;
+    gap: 3rem;
+
+}
+
+/* h3 de cada tarjeta y sus propiedades */
+.tarjeta-nosotros h3 {
+    color: var(--colorAcento);
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(2rem, 1vw, 1rem);
+}
+
+/* h4 de cada tarjeta y sus propiedades */
+.tarjeta-nosotros h4 {
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 0.75rem);
+}
+
+/* párrafo de cada tarjeta y sus propiedades */
+.tarjeta-nosotros p {
+    color: var(--colorTextoSec);
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+/* Propiedades de las tarjetas */
+.tarjeta-nosotros {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-right: solid var(--colorGris) 1px;
+    padding: 0.75rem;
+}
+
+
+
+/* ELEMENTOS COMUNES DE LOS FORMULARIOS */
+/* Div que contienen los datos */
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Label de los datos */
+.datos label {
+    text-transform: uppercase;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: var(--fuentePrimaria);
+}
+
+/* Div que contiene los elementos de los formularios */
+.linea-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Inputs de los formularios */
+.linea-formulario input {
+    padding: 0.75rem;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: var(--fuentePrimaria);
+    width: 100%;
+}
+
+/* Select de las opciones del formulario de 'contacto' */
+.linea-formulario select {
+    padding: 0.75rem;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: var(--fuentePrimaria);
+}
+
+/* Mensaje del formulario del section de 'contacto' */
+.mensaje textarea {
+    height: 150px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-family: var(--fuentePrimaria);
+    padding: 0.75rem;
+}
+
+/* botón del div de los datos del formulario, con sus propiedades */
+.datos button {
+    background-color: var(--colorAcento);
+    padding: 1rem;
+    color: var(--colorBlanco);
+    border-style: none;
+    width: 200px;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Hover para el botón */
+button:hover {
+    background-color: var(--colorAcentoOscuro);
+}
+
+
+
+
+/* MENSAJES CONFIRMACION */
+
+#mensaje-confirmacion-contacto{
+    color: var(--colorAcento);
+    padding-top: 1rem;
+}
+
+#mensaje-confirmacion-proponer{
+    color: var(--colorAcento);
+    padding-top: 1rem;
+}
+
+/* Responsividad para MOVIL */
+
+@media(max-width: 425px) {
+
+    /* PRIMER SECTION */
+
+    .texto-contenedor {
+        width: 100%;
+    }
+
+    /* SEGUNDO SECTION */
+
+    .section-formulario {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    /* TERCER SECTION */
+
+    .section-proponer {
+        flex-direction: column;
+        margin: 0;
+        align-items: start;
+        gap: 1rem;
+    }
+
+    .proponer-lista {
+        width: 100%;
+    }
+
+
+    /* CUARTO SECTION */
+
+    .info-nosotros {
+        flex-direction: column;
+        gap: 1rem;
+
+    }
+
+    .tarjeta-nosotros {
+        border-top: solid var(--colorGris) 1px;
+        border-right: none;
+    }
+
+    .section-sobrenosotros {
+        gap: 50px;
+    }
+}
+
+/* Responsividad para TABLET */
+
+@media(min-width: 426px) and (max-width: 800px) {
+
+    /* SEGUNDO SECTION */
+
+    .section-formulario {
+        flex-direction: column;
+    }
+
+    /* TERCER SECTION */
+
+    .section-proponer {
+        flex-direction: column;
+        align-items: start;
+        margin: 0;
+        gap: 1rem;
+    }
+
+    .proponer-lista {
+        width: 100%;
+    }
+}

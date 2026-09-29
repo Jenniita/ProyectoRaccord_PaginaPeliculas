@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/categoriaProductos.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <!-- HEADER CON ICONO Y NAV -->
+    <header class="flex">
+        <div class="logo">
+            <img src="img/Gemini_Generated_Image_gf1w91gf1w91gf1w.png" alt="">
+             <!-- NOMBRE DE LA PÁGINA -->
+            <div class="titulo-pagina">
+                <p class="titulo">Raccord</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <img id="menu-icono" src="img/menu_24dp_F5F5F3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+
+        <nav class="navegador flex">
+            <ul class="flex">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="categoriaProductos.html">Listas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+       
+
+        <!-- PRIMER SECTION, CATÁLOGO -->
+        <section class="todas-listas">
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Catálogo</h2>
+                <h1 class="h1listas">Todas las <span class="resaltado"><em>listas</em></span> de películas</h1>
+                <p>Más de 40 rankings organizados por género, época y temáticas especiales. Cada lista, razonada y
+                    argumentada.</p>
+            </div>
+
+        </section>
+        
+        <!-- SEGUNDO SECTION, POR GÉNERO -->
+        <section class="section-genero">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Por género</h2>
+                <h3 class="h3listas">Elige tu <span class="resaltado">género</span> favorito</h3>
+            </div>
+
+            <!-- DIV CON EL GRID DE LAS PELÍCULAS POR GÉNERO -->
+            <div class="por-genero">
+                <!-- DIV DE CADA PELÍCULA CON SU GÉNERO E INFORMACIÓN -->
+                <div class="genero">
+                    <h3>Terror</h3>
+                    <p>Desde el terror psicológico hasta el slasher más extremo. Las películas que quedan en la memoria.
+                    </p>
+                    <a href="">8 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Ciencia ficción</h3>
+                    <p>Visiones del futuro, distopías y preguntas sobre la humanidad que solo el cine puede formular.
+                    </p>
+                    <a href="">6 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Drama</h3>
+                    <p>El alma del cine de autor. Historias humanas narradas con rigor y profundidad.
+                    </p>
+                    <a href="">7 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Comedia</h3>
+                    <p>Porque hacer reír es tan difícil como emocionar. Las mejores comedias tienen también algo que
+                        decir.
+                    </p>
+                    <a href="">8 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Animación</h3>
+                    <p>De Miyazaki a Pixar, pasando por el stop-motion y la animación experimental. No es solo para
+                        niños.
+                    </p>
+                    <a href="">5 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Documental</h3>
+                    <p>La realidad como guion. Los documentales que cambiaron nuestra forma de ver el mundo.
+                    </p>
+                    <a href="">3 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Thriller
+                    </h3>
+                    <p>Desde Hitchcock hasta Fincher. El género que convirtió la tensión en un lenguaje propio y la
+                        desconfianza en una forma de narrar
+                    </p>
+                    <a href="">8 listas</a>
+                </div>
+
+                <div class="genero">
+                    <h3>Cine de época</h3>
+                    <p>Cuando el pasado se convierte en escenario. Las películas que reconstruyen la historia con
+                        precisión, belleza y mirada crítica.
+                    </p>
+                    <a href="">4 listas</a>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- TERCER DIV, POR ÉPOCA -->
+        <section class="siglo-cine">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Por época</h2>
+                <h3 class="h3listas">Un siglo de cine</h3>
+            </div>
+
+            <!-- DIV CON LAS PELÍCULAS POR ÉPOCA -->
+            <div class="contenedor-filas-cine">
+                <!-- DIV DE LA FILA DE CADA PELÍCULA -->
+                <div class="fila-cine-completa">
+                    <!-- DIV DE LA INFORMACIÓN DE LAS PELÍCULAS -->
+                    <div class="fila-cine">
+                        <!-- FECHA Y TIPO DE CINE -->
+                        <div class="fecha">
+                            <h3>1920-1940</h3>
+                            <p>Cine clásico</p>
+                        </div>
+                        <!-- INFORMACIÓN DE LA CATEGORÍA -->
+                        <div class="texto-cine">
+                            <h4>Los fundamentos del lenguaje cinematográfico</h4>
+                            <p>El período en que el cine aprendió a hablar, literal y metafóricamente. Chaplin,
+                                Lang, Eisenstein.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- BOTÓN QUE TE LLEVARIA A LAS LISTAS -->
+                    <div class="ver-listas">
+                        <a class="boton-listas" href="">Ver listas</a>
+                    </div>
+
+                </div>
+
+                <div class="fila-cine-completa">
+                    <div class="fila-cine">
+                        <div class="fecha">
+                            <h3>1950-1969</h3>
+                            <p>Edad de oro</p>
+
+                        </div>
+
+                        <div class="texto-cine">
+                            <h4>La nouvelle vague y el cine de autor europeo</h4>
+                            <p>La revolución que desafió las convenciones narrativas y nació un nuevo modo de contar
+                                historias.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="ver-listas">
+                        <a class="boton-listas" href="">Ver listas</a>
+                    </div>
+
+                </div>
+
+                <div class="fila-cine-completa">
+                    <div class="fila-cine">
+                        <div class="fecha">
+                            <h3>1970-1989</h3>
+                            <p>Nuevo Hollywood</p>
+
+                        </div>
+
+                        <div class="texto-cine">
+                            <h4>Coppola, Scorsese, Spielberg y la gran transformación</h4>
+                            <p>La década más influyente del cine moderno. El nacimiento del blockbuster y el triunfo del
+                                autor.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="ver-listas">
+                        <a class="boton-listas" href="">Ver listas</a>
+                    </div>
+
+                </div>
+
+                <div class="fila-cine-completa">
+                    <div class="fila-cine">
+                        <div class="fecha">
+                            <h3>1990-2009</h3>
+                            <p>Cine contemporáneo</p>
+
+                        </div>
+
+                        <div class="texto-cine">
+                            <h4>El cine independiente y la globalización de las historias</h4>
+                            <p>Tarantino, el cine asiático, el digital y la diversificación de voces en el panorama
+                                mundial.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="ver-listas">
+                        <a class="boton-listas" href="">Ver listas</a>
+                    </div>
+
+                </div>
+
+                <div class="fila-cine-completa">
+                    <div class="fila-cine">
+                        <div class="fecha">
+                            <h3>2010-hoy</h3>
+                            <p>Era actual</p>
+
+                        </div>
+
+                        <div class="texto-cine">
+                            <h4>El streaming, las plataformas y la fragmentación del relato</h4>
+                            <p>¿Qué queda del cine cuando todo es contenido? Las películas que demuestran que el arte
+                                sigue vivo.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="ver-listas">
+                        <a class="boton-listas" href="">Ver listas</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2002-2026. | Raccord es una página de recomendación de películas y series, y es un medio totalmente
+            independiente cuya principal prioridad es la privacidad y seguridad de los datos de sus usuariosAll Rights
+            Reserved - Todos los derechos reservados</p>
+
+    </footer>
+
+    <script src="js/global.js"></script>
+</body>
+
+
+
+</html>

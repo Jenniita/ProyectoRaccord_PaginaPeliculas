@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <!-- HEADER CON EL ICONO Y EL NAV -->
+    <header class="flex">
+        <div class="logo">
+            <img src="img/Gemini_Generated_Image_gf1w91gf1w91gf1w.png" alt="">
+            <!-- NOMBRE DE LA PÁGINA -->
+            <div class="titulo-pagina">
+                <p class="titulo">Raccord</p>
+            </div>
+
+        </div>
+
+        <div class="menu">
+            <img id="menu-icono" src="img/menu_24dp_F5F5F3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+
+        <nav class="navegador flex">
+            <ul class="flex">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="categoriaProductos.html">Listas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <main>
+        <!-- TÍTULO DE LA PÁGINA CON SU SUBTITULO -->
+    
+
+        <!-- PRIMER SECTION, BANER -->
+        <section class="baner division">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h1 class="h1baner">Cine con criterio. <span class="resaltado"><br><em>Sin cortes.</em></span> </h1>
+                <h2 class="h2baner">Las películas favoritas de nuestros seguidores</h2>
+                <!-- DIV CON LOS BOTONES -->
+                <div class="div-boton">
+                    <a class="boton ver" href="categoriaProductos.html">Ver todas las listas</a>
+                    <a class="boton proponer" href="contacto.html">Proponer una lista</a>
+
+                </div>
+
+            </div>
+
+
+            <!-- DIV CON LAS PELÍCULAS -->
+            <div class="peliculas-banner">
+                <!-- ICONO FLECHA -->
+                <div class="icono-flecha" id="retroceder">
+                    <img src="img/arrow_back_ios_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+                <div clas>
+                    <!-- DIV CON LAS IMÁGENES DE LAS PELÍCULAS -->
+                    <div class="grid" id="gridPeliculas">
+                        <img src="img/vertigo-154050178-large.png" alt="">
+                        <img src="img/a_clockwork_orange-964766200-large.png" alt="">
+                        <img src="img/la_vita_e_bella-646167341-large.png" alt="">
+                        <img src="img/psycho-805182707-large.png" alt="">
+                        <img src="img/the_shawshank_redemption-576140557-large.png" alt="">
+                        <img src="img/lost_highway-573198031-large.png" alt="">
+                        <img src="img/un_monstruo_viene_a_verme_a_monster_calls-108553414-large.png" alt="">
+                        <img src="img/the_sixth_sense-516003703-large.png" alt="">
+                        <img src="img/one_flew_over_the_cuckoo_s_nest-669408644-large.png" alt="">
+                        <img src="img/oldeuboi-520509097-large.png" alt="">
+                    </div>
+
+                </div>
+                <!-- ICONO FLECHA -->
+                <div class="icono-flecha" id="avanzar">
+                    <img src="img/arrow_forward_ios_24dp_E3E3E3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SEGUNDO SECTION, LISTAS DEL MES -->
+        <section class="listaMes division">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Listas del mes</h2>
+                <h3 class="h3listas">Las 10 películas <br>que redefinieron el <span class="resaltado">thriller</span>
+                </h3>
+                <p>Desde la tensión claustrofóbica de Hitchcock hasta la frialdad de Fincher. <br>Un recorrido por los
+                    momentos en que el cine aprendió a hacernos dudar de todo.</p>
+                <!-- BOTÓN PARA VER LISTAS COMPLETAS -->
+                <a class="boton ver" href="categoriaProductos.html">Ver lista completa</a>
+            </div>
+
+            <!-- DIV CON LAS PELICULAS DEL RANKING -->
+            <div class="rankinMes">
+                <div class="informacion-pelicula">
+                    <div class="div-peliculas">
+                        <!-- DIV CON LA INFORMACIÓN DE LAS PELICULAS DE FORMA INDEPENDIENTE -->
+                        <div class="peliculas-orden">
+                            <!-- NÚMERO DE LA PELÍCULA -->
+                            <div class="numero">
+                                <p>01</p>
+                            </div>
+                            <!-- INFORMACIÓN DE LA PELÍCULA -->
+                            <div class="informacionP">
+                                <p class="nombre-pelicula">Psicosis</p>
+                                <p class="director">Alfred Hitchcock - 1960</p>
+
+                            </div>
+
+                        </div>
+                        <div class="peliculas-orden">
+                            <div class="numero">
+                                <p>02</p>
+                            </div>
+                            <div class="informacionP">
+                                <p class="nombre-pelicula">Se7en</p>
+                                <p class="director">David Fincher - 1995</p>
+
+                            </div>
+
+                        </div>
+                        <div class="peliculas-orden">
+                            <div class="numero">
+                                <p>03</p>
+                            </div>
+                            <div class="informacionP">
+                                <p class="nombre-pelicula">El silencio de los corderos</p>
+                                <p class="director">Jonathan Demme - 1991</p>
+
+                            </div>
+
+                        </div>
+                        <div class="peliculas-orden">
+                            <div class="numero">
+                                <p>04</p>
+                            </div>
+                            <div class="informacionP">
+                                <p class="nombre-pelicula">Chinatown</p>
+                                <p class="director">Roman Polanski - 1974</p>
+
+                            </div>
+
+                        </div>
+                        <div class="peliculas-orden">
+                            <div class="numero">
+                                <p>05</p>
+                            </div>
+                            <div class="informacionP">
+                                <p class="nombre-pelicula">Oldboy</p>
+                                <p class="director">Park Chan-wook - 2003</p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TERCER SECTION, DATOS CURIOSOS -->
+        <section class="datosCuriosos division">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h2 class="h2datos">Datos curiosos sobre películas</h2>
+                <div>
+                    <h3 class="h3datos bordeIzq"> <em>"Cinco películas consideradas <br><span
+                                class="resaltado">fracasos</span>
+                            en su
+                            estreno son hoy <br>obras de culto
+                            imprescindibles."</em> </h3>
+
+                </div>
+                <!-- BOTÓN QUE TE LLEVA A LA PÁGINA DE LAS LISTAS -->
+                <a class="boton proponer" href="categoriaProductos.html">Ver la lista completa </a>
+            </div>
+
+            <!-- DIV CON LAS PELÍCULAS -->
+            <div class="div-peliculas ">
+                <!-- DIV DE CADA PELÍCULA -->
+                <div class="peliculas-ordenes borde">
+                    <!-- NÚMERO DE LA PELÍCULA -->
+                    <div class="numero">
+                        <p>01</p>
+                    </div>
+                    <!-- INFORMACIÓN DE LA PELÍCULA -->
+                    <div class="informacionP">
+                        <p class="nombre-pelicula">Blade Runner</p>
+                        <p class="director">Ridley Scott, 1982. Fracasó en taquilla. Hoy es referencia del
+                            cyberpunk.</p>
+
+                    </div>
+                </div>
+                <div class="peliculas-ordenes borde">
+                    <div class="numero">
+                        <p>02</p>
+                    </div>
+                    <div class="informacionP">
+                        <p class="nombre-pelicula">The Thing</p>
+                        <p class="director">John Carpenter, 1982. Criticada por su violencia. Ahora, obra maestra del
+                            terror.</p>
+
+                    </div>
+                </div>
+                <div class="peliculas-ordenes borde">
+                    <div class="numero">
+                        <p>03</p>
+                    </div>
+                    <div class="informacionP">
+                        <p class="nombre-pelicula">Office Space</p>
+                        <p class="director">Mike Judge, 1999. Pasó desapercibida. Se convirtió en comedia de culto.</p>
+
+                    </div>
+                </div>
+                <div class="peliculas-ordenes borde">
+                    <div class="numero">
+                        <p>04</p>
+                    </div>
+                    <div class="informacionP">
+                        <p class="nombre-pelicula">Fight Club</p>
+                        <p class="director">David Fincher, 1999. Polémica en su estreno. Símbolo generacional décadas
+                            después.</p>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2002-2026. | Raccord es una página de recomendación de películas y series, y es un medio totalmente
+            independiente cuya principal prioridad es la privacidad y seguridad de los datos de sus usuariosAll Rights
+            Reserved - Todos los derechos reservados</p>
+
+    </footer>
+    <!-- El link del script va justo al final del body -->
+    <script src="js/global.js"></script>
+    <script src="js/inicio.js"></script>
+</body>
+
+
+</html>

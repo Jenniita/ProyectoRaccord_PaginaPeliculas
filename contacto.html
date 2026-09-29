@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/global.css">
+</head>
+
+<body>
+    <!-- HEADER CON EL ICONO Y EL NAV -->
+    <header class="flex">
+        <div class="logo">
+            <img src="img/Gemini_Generated_Image_gf1w91gf1w91gf1w.png" alt="">
+             <!-- NOMBRE DE LA PÁGINA -->
+            <div class="titulo-pagina">
+                <p class="titulo">Raccord</p>
+            </div>
+        </div>
+
+        <div class="menu">
+            <img id="menu-icono" src="img/menu_24dp_F5F5F3_FILL0_wght400_GRAD0_opsz24.svg" alt="">
+        </div>
+
+        <nav class="navegador flex">
+            <ul class="flex">
+                <li><a href="inicio.html">Inicio</a></li>
+                <li><a href="categoriaProductos.html">Listas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+
+
+    <main>
+       
+
+        <!-- PRIMER SECTION, DE CONTACTO -->
+        <section class="section-contacto">
+            <!-- TEXTO DEL SECTION -->
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Contacto</h2>
+                <h1 class="h1listas"><span class="resaltado">Cuéntanos</span> qué piensas</h1>
+                <p>¿Echamos en falta alguna película? ¿Discrepas con un ranking? ¿Tienes una lista que merece ser
+                    publicada? Escríbenos.</p>
+            </div>
+
+        </section>
+
+        <!-- SEGUNDO SECTION, PRIMER FORMULARIO -->
+        <section class="section-formulario">
+            <div class="formulario">
+                <!-- DIV CON TEXTO INFORMATIVO DEL FORMULARIO -->
+                <div class="texto-contenedor">
+                    <h2 class="h2listas">Formulario</h2>
+                    <h3 class="h3listas">Escríbenos</h3>
+                    <p>Respondemos a todos los mensajes. Si propones una corrección o añadido con argumentos sólidos, lo
+                        publicamos con tu nombre.</p>
+                </div>
+
+                <!-- DIV QUE CONTIENE EL FORMULARIO -->
+                <div class="formulario-rellenar">
+                    <form action="" id="formulario-contacto">
+                        <!-- DATOS DEL FORMULARIO -->
+                        <div class="datos">
+                            <!-- NOMBRE -->
+                            <div class="nombre linea-formulario">
+                                <label for="text">Nombre</label>
+                                <input type="text" placeholder="Tu nombre" required>
+                            </div>
+                            <!-- CORREO -->
+                            <div class="correo linea-formulario">
+                                <label for="text">Correo</label>
+                                <input type="email" placeholder="correo@ejemplo.com" required>
+                            </div>
+                            <!-- ASUNTO SELECCIONABLE -->
+                            <div class="asunto linea-formulario">
+                                <label for="text">Asunto</label>
+                                <select name="select-asunto">
+                                    <option value="">Selecciona una opción</option>
+                                    <option value="">Corrección de un ranking</option>
+                                    <option value="">Sugerencia de película</option>
+                                    <option value="">Propuesta de lista nueva</option>
+                                    <option value="">Colaboración o prensa</option>
+                                    <option value="">Otro</option>
+                                </select>
+                            </div>
+                            <!-- MENSAJE CON TEXT AREA -->
+                            <div class="mensaje linea-formulario">
+                                <label for="text">Mensaje</label>
+                                <textarea name="mensaje"
+                                    placeholder="Cuéntanos. Cuanto más detallado, mejor."></textarea>
+                            </div>
+                            <!-- BOTÓN PARA ENVIAR EL FORMULARIO -->
+                            <button>Enviar Mensaje</button>
+
+                        </div>
+                    </form>
+                    <!-- PARRAFO PARA QUE SE MUESTRE EL MENSAJE DEL SUBMIT -->
+                    <p id= "mensaje-confirmacion-contacto"></p>
+
+                </div>
+            </div>
+
+            <!-- DIV DE POR QUÉ ESCRIBIR -->
+            <div class="porque-escribir">
+                <!-- TÍTULO DEL APARTADO -->
+                <div class="texto-contenedor">
+                    <h2 class="h2listas">Por qué escribirnos</h2>
+                </div>
+
+                <!-- DIV DE LOS MOTIVOS -->
+                <div class="div-motivos">
+                    <!-- MOTIVOS DE FORMA INDEPENDIENTE -->
+                    <div class="motivos-tarjeta">
+                        <h3>Corregir un ranking</h3>
+                        <p>Si crees que una película debería estar más arriba, más abajo o directamente no estar,
+                            argumenta
+                            tu caso. Los mejores argumentos actualizan las listas.</p>
+                    </div>
+
+                    <div class="motivos-tarjeta">
+                        <h3>Sugerir una película olvidada</h3>
+                        <p>El cine es inmenso y seguro que hay títulos que merecen estar en nuestras listas y aún no
+                            hemos visto. Te escuchamos.</p>
+                    </div>
+
+                    <div class="motivos-tarjeta">
+                        <h3>Colaborar con Raccord</h3>
+                        <p>Si eres crítico, programador de festival o simplemente alguien con criterio y ganas, podemos
+                            hablar de una colaboración editorial.</p>
+                    </div>
+
+                    <div class="motivos-tarjeta">
+                        <h3>Tiempo de respuesta</h3>
+                        <p>Respondemos en un plazo máximo de 72 horas. Los mensajes con argumentos detallados tienen
+                            prioridad.</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TERCER SECTION, PROPONER LISTAS -->
+        <section class="section-proponer">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Comunidad</h2>
+                <h3 class="h3listas"><span class="resaltado">Propón</span> tu propia lista</h3>
+                <p>¿Tienes una lista clara en la cabeza y crees que merece ser publicada en Raccord? Envíanos el
+                    título y las películas. Si el criterio es sólido, la publicamos con tu nombre.</p>
+
+            </div>
+
+            <!-- DIV CON EL FORMULARIO PARA PROPONER -->
+            <div class="proponer-lista">
+                <div class="proponer-formulario">
+                    <div class="formulario-rellenar">
+                        <!-- FORMULARIO -->
+                        <form action="" id="formulario-proponer">
+                            <!-- DATOS DEL FORMULARIO -->
+                            <div class="datos">
+                                <!-- TITULO -->
+                                <div class="titulo-lista linea-formulario">
+                                    <label for="text">Titulo de tu lista</label>
+                                    <input type="text" placeholder="Ej: Las 5 mejores películas de terror italiano"
+                                        required>
+                                </div>
+
+                                <!-- NOMBRE -->
+                                <div class="nombre-alias linea-formulario">
+                                    <label for="text">Tu nombre o alias</label>
+                                    <input type="text" placeholder="Cómo quieres que te citemos" required>
+                                </div>
+
+                                <!-- DIV CON VARIAS PELICULAS PARA EL FORMULARIO -->
+                                <div class="peliculas linea-formulario">
+                                    <label for="text">Películas (en orden)</label>
+
+                                    <!-- DIV PARA CADA PELICULA -->
+                                    <div class="peliculas-orden ">
+                                        <h4 class="numero-pelicula">01</h4>
+                                        <input type="text" placeholder="Titulo-Director-Año" required>
+                                    </div>
+
+                                    <div class="peliculas-orden">
+                                        <h4 class="numero-pelicula">02</h4>
+                                        <input type="text" placeholder="Titulo-Director-Año" required>
+                                    </div>
+
+                                    <div class="peliculas-orden">
+                                        <h4 class="numero-pelicula">03</h4>
+                                        <input type="text" placeholder="Titulo-Director-Año" required>
+                                    </div>
+
+                                    <div class="peliculas-orden">
+                                        <h4 class="numero-pelicula">04</h4>
+                                        <input type="text" placeholder="Titulo-Director-Año">
+                                    </div>
+
+                                    <div class="peliculas-orden">
+                                        <h4 class="numero-pelicula">05</h4>
+                                        <input type="text" placeholder="Titulo-Director-Año">
+                                    </div>
+
+                                    <div class="peliculas-orden">
+                                        <h4 class="numero-pelicula">06</h4>
+                                        <input type="text" placeholder="Titulo-Director-Año">
+                                    </div>
+
+                                </div>
+                                <!-- BOTÓN PARA ENVIAR -->
+                                <button>Enviar Propuesta</button>
+                            </div>
+                        </form>
+                        <!-- PÁRRAFO PARA QUE SALGA EL MENSAJE DE CONFIRMACIÓN AL RELLENAR EL FORMULARIO -->
+                        <p id="mensaje-confirmacion-proponer"></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CUARTO SECTION, SOBRE NOSOTROS -->
+        <section class="section-sobrenosotros">
+            <!-- DIV CON EL TEXTO -->
+            <div class="texto-contenedor">
+                <h2 class="h2listas">Sobre nosotros</h2>
+                <h3 class="h3listas">Qué es <span class="resaltado">Raccord</span> y quién hay detrás</h3>
+                <p>Raccord nació de la convicción de que las listas de cine pueden ser algo más que popularidad. Cada
+                    ranking es el resultado de revisiones, debates y argumentos. No hay patrocinadores ni algoritmos.
+                    Solo criterio.</p>
+            </div>
+
+            <!-- DIV CON LA INFORMACIÓN DEL SOBRE NOSOTROS -->
+            <div class="info-nosotros">
+                <!-- DIV CON LA INFORMACIÓN INDEPENDIENTE -->
+                <div class="tarjeta-nosotros">
+                    <h3>40 +</h3>
+                    <h4>Listas publicadas</h4>
+                    <p>Cada una revisada, argumentada y abierta a corrección cuando los argumentos lo justifican.</p>
+                </div>
+
+                <div class="tarjeta-nosotros">
+                    <h3>Sin</h3>
+                    <h4>Patrocinadores ni afiliados</h4>
+                    <p>Ninguna película aparece en una lista por motivos comerciales. La independencia editorial es innegociable.</p>
+                </div>
+
+                <div class="tarjeta-nosotros">
+                    <h3>100%</h3>
+                    <h4>Criterio editorial propio</h4>
+                    <p>Las listas las hacen personas que llevan décadas viendo, discutiendo y escribiendo sobre cine.</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2002-2026. | Raccord es una página de recomendación de películas y series, y es un medio totalmente
+            independiente cuya principal prioridad es la privacidad y seguridad de los datos de sus usuariosAll Rights
+            Reserved - Todos los derechos reservados</p>
+
+    </footer>
+    <script src="js/global.js"></script>
+    <script src="js/contacto.js"></script>
+</body>
+
+
+
+</html>

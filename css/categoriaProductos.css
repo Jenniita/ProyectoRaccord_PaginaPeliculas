@@ -1,0 +1,310 @@
+
+/* ELEMENTOS COMUNES ENTRE SECTIONS */
+
+/* PRIMER SECTION */
+.todas-listas{
+    background-color: var(--colorNegro);
+    padding: 4rem 5%;
+    
+}
+
+.texto-contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    color: var(--colorBlanco);
+    width: 550px;
+
+}
+
+.h2listas {
+    width: 200px;
+    font-family: var(--fuentePrimaria);
+    font-size: clamp(1rem, 1vw, 2rem);
+    color: var(--colorBlanco);
+}
+
+.h1listas {
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(2.5rem, 1vw, 4rem);
+    color: var(--colorBlanco);
+}
+
+.texto-contenedor p{
+    color: var(--colorBlanco);
+}
+
+.resaltado{
+    color: var(--colorAcento);
+}
+
+
+/* SEGUNDO SECTION */
+.por-genero{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+
+.h3listas{
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(2.5rem, 1vw, 4rem);
+}
+
+.genero{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: solid var(--colorGris) 0.5px;
+    border-top: solid transparent 3px;
+    padding: 3rem;
+    cursor: pointer;
+    
+}
+
+.genero:hover{
+    border-top: solid var(--colorAcento) 3px;
+    background-color: var(--colorGris);
+    
+}
+
+.genero a{
+    color: var(--colorAcento);
+    width: 50px;
+    
+}
+
+.genero h3{
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(1rem, 1vw, 2rem);
+    border-bottom: solid var(--colorAcento) 1px;
+    padding-bottom: 1rem;
+}
+
+.genero p{
+    color: var(--colorTextoSec);
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    
+   
+}
+
+.section-genero h2{
+    color: var(--colorAcento);
+    
+}
+
+.section-genero h3{
+    color: var(--colorNegro);
+}
+
+.section-genero{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5%;
+    gap: 3rem;
+    margin: 100px 0px;
+    
+}
+
+.ver-listas{
+    width: max-content;
+}
+
+
+/* TERCER SECTION */
+
+.siglo-cine{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5%;
+    gap: 3rem;
+    margin: 100px 0px;
+}
+
+.siglo-cine .h2listas{
+    color: var(--colorAcento);
+}
+
+.siglo-cine .h3listas{
+    color: var(--colorNegro);
+}
+
+.boton-listas{
+    color: var(--colorGrisOscuro);
+    border: solid var(--colorGrisOscuro) 1px;
+    padding: 1rem;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    
+}
+
+.boton-listas:hover{
+    background-color: var(--colorGrisOscuro);
+    color: var(--colorBlanco);
+}
+
+.contenedor-filas-cine{
+    display: flex;
+    flex-direction: column;
+    
+   
+}
+
+.fila-cine{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: flex-start;
+    
+}
+
+.fecha{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fila-cine-completa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: solid var(--colorAcento) 0.5px;
+    padding: 2rem;
+}
+
+.fecha h3 {
+    color: var(--colorAcento);
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(1.75rem, 1vw, 3rem);
+    font-weight: 700;
+    
+}
+
+.fecha p{
+    text-transform: uppercase;
+    font-size: clamp(0.50rem, 1vw, 0.75rem);
+}
+
+.texto-cine{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.texto-cine h4{
+    font-family: var(--fuenteTitulo);
+    font-size: clamp(1rem, 1vw, 2rem);
+}
+
+.texto-cine p{
+    color: var(--colorTextoSec);
+    font-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+/* Responsividad para el MOVIL */
+
+@media(max-width: 425px){
+
+    /* PRIMER SECTION */
+
+    .texto-contenedor{
+        width: 100%;
+    }
+
+    /* SEGUNDO SECTION */
+    .section-genero{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+
+    .por-genero{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .genero{
+        padding: 1rem;
+    }
+
+    /* TERCER SECTION */
+    .siglo-cine{
+        margin: 0;
+    }
+
+    .fila-cine-completa{
+        padding: 0;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: flex-start;
+        align-items: start;
+        margin: 1rem 0;
+        
+        
+    }
+
+    .fila-cine{
+        gap: 1rem;
+        padding-top: 1rem;
+        flex-direction: column;
+        align-items: start;
+        
+        
+    }
+
+    .boton-listas{
+        padding: 0.5rem;
+    }
+
+   
+    
+}
+
+/* Responsividad para el TABLET */
+
+@media(min-width: 426px) and (max-width:800px){
+
+    /* SEGUNDO SECTION */
+
+     .section-genero{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+
+    .por-genero{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .genero{
+        padding: 1rem;
+    }
+
+    /* TERCER SECTION */
+
+    .siglo-cine{
+        margin: 0;
+    }
+
+    .fila-cine-completa{
+        padding: 0;
+        gap: 0.5rem;
+        margin: 1rem 0;
+        
+        
+    }
+
+    .fila-cine{
+        gap: 1rem;
+        padding-top: 1rem;
+        flex-direction: column;
+        align-items: start;
+        
+        
+    }
+
+    .boton-listas{
+        padding: 0.5rem;
+    }
+
+}
